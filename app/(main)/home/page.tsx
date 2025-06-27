@@ -3,6 +3,8 @@ import { Box } from "@chakra-ui/react";
 import { observer } from "mobx-react-lite";
 import GallerySection from "../school/component/GallerySection/GallerySection";
 import AboutSchool from "./components/AboutSchoolSection/AboutSchoolSection";
+import MapAddressSection from "./components/AddressSection/AddressSection";
+import SchoolAdmissionSection from "./components/AdmissionSection/AdmissionSection";
 import MeetOurPrincipal from "./components/PrincipalSection/PrincipalSection";
 import SchoolHeroSection from "./components/SchoolHeroSection/SchoolHeroSection";
 import MeetOurTeachers from "./components/TeachersSection/TeachersSection";
@@ -36,6 +38,8 @@ const Home = observer(() => {
       <MeetOurPrincipal />
       <MeetOurTeachers />
       <GallerySection images={images}   />
+      <SchoolAdmissionSection/>
+      <MapAddressSection/>
     </Box>
   );
 });
