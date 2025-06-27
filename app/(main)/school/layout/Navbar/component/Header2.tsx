@@ -30,7 +30,7 @@ import { largeHeaderHeight } from "../../common/constant";
   }
 
   interface HeaderProps {
-    scrollToSection: (linkId: string) => void;
+    scrollToSection: () => void;
     linksConfig?: LinkConfig[];
     colors: any;
     metaData: any;
@@ -59,7 +59,7 @@ import { largeHeaderHeight } from "../../common/constant";
 
     const handleLinkClick = useCallback((linkId: string) => {
       setActiveLink(linkId);
-      scrollToSection(linkId);
+      scrollToSection();
     },[setActiveLink,scrollToSection]);
 
     const linkElements = useMemo(() => (

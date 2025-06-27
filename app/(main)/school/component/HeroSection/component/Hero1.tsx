@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 export default function Hero1() {
   return (

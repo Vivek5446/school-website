@@ -1,22 +1,21 @@
 import {
     Box,
+    Button,
+    Collapse,
+    Flex,
     Grid,
-    Text,
-    VStack,
     HStack,
     Icon,
-    Button,
-    useColorMode,
-    Collapse,
     Stack,
-    Flex,
+    Text,
+    VStack
 } from "@chakra-ui/react";
-import { MdLocationOn, MdPhone, MdEmail, MdEdit } from "react-icons/md";
-import { useSectionColorContext } from "../../../../School";
+import { MdEdit, MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+// import { useSectionColorContext } from "../../../../School";
 import { useState } from "react";
 
-const Map2 = ({ webColor, content, isEditable, onOpen }: any) => {
-    const { colors } = useSectionColorContext() || { colors: webColor || {} };
+const Map2 = ({  content, isEditable, onOpen }: any) => {
+    // const { colors } = useSectionColorContext() || { colors: webColor || {} };
     const [showDetails, setShowDetails] = useState(true);
 
     return (
@@ -59,7 +58,7 @@ const Map2 = ({ webColor, content, isEditable, onOpen }: any) => {
                             <Text
                                 fontWeight="bold"
                                 fontSize="2xl"
-                                color={colors?.headingColor?.light}
+                                // color={colors?.headingColor?.light}
                             >
                                 {content.name}
                             </Text>
@@ -85,7 +84,7 @@ const Map2 = ({ webColor, content, isEditable, onOpen }: any) => {
                                     href={content.website}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{ color: colors?.headingColor?.light, textDecoration: "underline" }}
+                                    // style={{ color: colors?.headingColor?.light, textDecoration: "underline" }}
                                 >
                                     {content.website}
                                 </a>
@@ -105,17 +104,19 @@ const Map2 = ({ webColor, content, isEditable, onOpen }: any) => {
 
 // ContactCard component for better code organization
 const ContactCard = ({ icon, info }: { icon: any; info: string }) => {
-    const { colorMode } = useColorMode();
-    const { colors } = useSectionColorContext() || {};
+    // const { colorMode } = useColorMode();
+    // const { colors } = useSectionColorContext() || {};
     return (
         <HStack spacing={3} p={4} borderWidth={1} borderRadius="md" borderColor="teal.300">
             <Icon
                 as={icon}
                 boxSize={6}
-                color={colorMode === "dark" ? colors?.iconColor?.dark : colors?.iconColor?.light}
+                // color={colorMode === "dark" ? colors?.iconColor?.dark : colors?.iconColor?.light}
                 aria-label="Info"
             />
-            <Text fontSize="sm" color={colorMode === "dark" ? colors?.headingColor?.dark : colors?.headingColor?.light}>
+            <Text fontSize="sm" 
+            // color={colorMode === "dark" ? colors?.headingColor?.dark : colors?.headingColor?.light}
+            >
                 {info}
             </Text>
         </HStack>

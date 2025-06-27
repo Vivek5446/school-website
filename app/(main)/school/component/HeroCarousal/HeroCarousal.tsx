@@ -1,17 +1,17 @@
-import React from "react";
 import {
   Box,
-  IconButton,
-  useBreakpointValue,
-  Stack,
-  Heading,
-  Text,
   Container,
+  Heading,
+  IconButton,
+  Stack,
+  Text,
+  useBreakpointValue,
 } from "@chakra-ui/react";
+import React from "react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 // Type definition for a card
 interface CarouselCard {

@@ -1,4 +1,4 @@
-import { Box, Image, Tag, Text, useDisclosure, useColorModeValue, Divider } from "@chakra-ui/react";
+import { Box, Divider, Image, Tag, Text, useColorModeValue, useDisclosure } from "@chakra-ui/react";
 import TeacherDetailModal from "./TeacherDetailModel";
 // import { useSectionColorContext } from "../../School";
 

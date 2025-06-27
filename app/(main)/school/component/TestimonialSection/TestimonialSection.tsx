@@ -1,19 +1,9 @@
-import Testimonial1 from "./component/Testimonial1";
+import React from 'react'
 
-const TestimonialSection = ({
-  content = {},
-  setContent,
-  isEditable,
-  webColor,
-}: any) => {
+const TestimonialSection = () => {
   return (
-    <Testimonial1
-      content={content}
-      setContent={setContent}
-      isEditable={isEditable}
-      webColor={webColor}
-    />
-  );
-};
+    <div>TestimonialSection</div>
+  )
+}
 
-export default TestimonialSection;
+export default TestimonialSection
