@@ -1,40 +1,40 @@
-import { useState } from "react";
+import { AddIcon, DeleteIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Container,
-  Heading,
-  Text,
-  Flex,
-  Image,
-  useColorModeValue,
   Button,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  Input,
-  Textarea,
-  useDisclosure,
-  IconButton,
-  VStack,
-  HStack,
+  Container,
+  Divider,
+  Flex,
   FormControl,
   FormLabel,
-  Divider,
+  Heading,
+  HStack,
+  IconButton,
+  Image,
+  Input,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Text,
+  Textarea,
+  useColorModeValue,
+  useDisclosure,
+  VStack,
 } from "@chakra-ui/react";
-import { AddIcon, DeleteIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion"; // Import motion from framer-motion
-import { useSectionColorContext } from "../../../School";
+import { useState } from "react";
+// import { useSectionColorContext } from "../../../School";
 
 const MotionBox = motion(Box); // Create a motion-enabled Box
 
 export default function Principal1({ content, setContent, webColor }: any) {
-  const { websiteMode } = useSectionColorContext() || {
-    colors: webColor || {},
-    websiteMode: true,
-  };
+  // const { websiteMode } = useSectionColorContext() || {
+  //   colors: webColor || {},
+  //   websiteMode: true,
+  // };
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const textColor = useColorModeValue("gray.700", "gray.300");
@@ -175,11 +175,11 @@ export default function Principal1({ content, setContent, webColor }: any) {
           </MotionBox>
         </Flex>
 
-        {websiteMode && (
+        {/* {websiteMode && ( */}
           <Button mt={8} onClick={onOpen} colorScheme="blue">
             Edit Principal’s Message
           </Button>
-        )}
+        {/* )} */}
 
         <Modal isOpen={isOpen} onClose={onClose} size="2xl" isCentered>
           <ModalOverlay />
@@ -211,7 +211,7 @@ export default function Principal1({ content, setContent, webColor }: any) {
                 </FormControl>
 
                 <FormControl>
-                  <FormLabel fontWeight="bold">Principal's Name</FormLabel>
+                  <FormLabel fontWeight="bold">Principal&apos;s Name</FormLabel>
                   <Input
                     value={editContent.name}
                     onChange={(e) => handleInputChange("name", e.target.value)}

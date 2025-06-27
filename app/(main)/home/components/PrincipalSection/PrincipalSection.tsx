@@ -1,14 +1,13 @@
 import {
-    Box,
-    Container,
-    Divider,
-    Flex,
-    Grid,
-    Heading,
-    Icon,
-    Image,
-    Text,
-    VStack,
+  Box,
+  Container,
+  Flex,
+  Grid,
+  Heading,
+  Icon,
+  Image,
+  Text,
+  VStack
 } from '@chakra-ui/react';
 import { BiAward, BiBookOpen } from 'react-icons/bi';
 import { FaGraduationCap } from 'react-icons/fa';
@@ -72,7 +71,7 @@ Meet Our Principal
                 </Flex>
                 <Flex align="center">
                   <Icon as={BiBookOpen} w={5} h={5} color="blue.500" mr={3} />
-                  <Text color="gray.700">Author of "Nurturing Young Minds" (2022)</Text>
+                  <Text color="gray.700">Author of &quot;Nurturing Young Minds&quot; (2022)</Text>
                 </Flex>
               </VStack>
 
@@ -86,8 +85,8 @@ Meet Our Principal
                 borderColor="brand.500"
               >
                 <Text as="blockquote" fontStyle="italic" color="gray.700">
-                  "Every child is a unique star waiting to shine. Our role is to provide the perfect environment
-                  for them to discover their light and share it with the world."
+                  &quot;Every child is a unique star waiting to shine. Our role is to provide the perfect environment
+                  for them to discover their light and share it with the world.&quot;
                 </Text>
               </Box>
             </Box>

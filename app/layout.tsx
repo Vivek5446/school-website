@@ -1,25 +1,23 @@
 "use client";
 
-import { observer } from "mobx-react-lite";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
-import { theme } from "./theme/theme";
-import { lato } from "./theme/theme";
-import MainLayout from "./layouts/mainLayout/MainLayout";
-import AuthenticationLayout from "./layouts/authenticationLayout/AuthenticationLayout";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import stores from "./store/stores";
-import Notification from "./component/common/Notification/Notification";
-import Script from "next/script";
-import { Montserrat } from "next/font/google";
+import { observer } from "mobx-react-lite";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Script from "next/script";
+import { useEffect, useState } from "react";
+import Notification from "./component/common/Notification/Notification";
+import AuthenticationLayout from "./layouts/authenticationLayout/AuthenticationLayout";
 import DashboardLayout from "./layouts/dashboardLayout/DashboardLayout";
+import MainLayout from "./layouts/mainLayout/MainLayout";
 import { getMetadataForPath, PageMetadata } from "./metadata";
+import stores from "./store/stores";
+import { lato, theme } from "./theme/theme";
 // import { ComicNeue } from "next/font/google";
 import { Comic_Neue } from 'next/font/google';
 
 // const comicNeue = Comic_Neue({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+// const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 const comicNeue = Comic_Neue({ subsets: ["latin"], weight: ["300", "400",  "700"] });
 
 const RootLayout = observer(({ children }: { children: React.ReactNode }) => {

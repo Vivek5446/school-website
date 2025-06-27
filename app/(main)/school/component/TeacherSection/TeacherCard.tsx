@@ -2,7 +2,7 @@ import { Box, Image, Tag, Text, useDisclosure, useColorModeValue, Divider } from
 import TeacherDetailModal from "./TeacherDetailModel";
 // import { useSectionColorContext } from "../../School";
 
-const TeacherCard = ({ name, subject, imageUrl, bio, index, totalItems, webColor }: any) => {
+const TeacherCard = ({ name, subject, imageUrl, bio, index, totalItems }: any) => {
   // const { colors } = useSectionColorContext() || { colors: webColor || {} };
   const { isOpen, onOpen, onClose } = useDisclosure();
 
