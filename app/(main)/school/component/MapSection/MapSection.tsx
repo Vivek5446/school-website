@@ -1,7 +1,7 @@
-import { useState, lazy, Suspense, useMemo } from "react";
+import { Center, Spinner } from "@chakra-ui/react";
+import { lazy, Suspense, useMemo, useState } from "react";
 import MapForm from "./component/MapForm";
-import { Center } from "@chakra-ui/react";
-import Loader from "../../../../../config/component/Loader/Loader";
+// import Loader from "../../../../../config/component/Loader/Loader";
 
 const loadComponent = (key: string) => {
   switch (key) {
@@ -32,7 +32,7 @@ const MapSection = ({
       <Suspense
         fallback={
           <Center>
-            <Loader height="60vh" />
+            <Spinner height="10vh" width="10vh" />
           </Center>
         }
       >
