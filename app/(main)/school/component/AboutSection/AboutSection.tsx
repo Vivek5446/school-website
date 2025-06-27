@@ -1,7 +1,7 @@
-import { Suspense, lazy, useState, useMemo } from "react";
+import { Center, Spinner } from "@chakra-ui/react";
+import { Suspense, lazy, useMemo, useState } from "react";
 import AboutForm from "./component/AboutForm/AboutForm";
-import { Center } from "@chakra-ui/react";
-import Loader from "../../../../../config/component/Loader/Loader";
+// import Loader from "../../../../../config/component/Loader/Loader";
 
 const loadComponent = (key : any) => {
   switch (key) {
@@ -27,7 +27,7 @@ const AboutSection = ({
 
   return (
     <>
-      <Suspense fallback={<Center><Loader height="60vh"/> </Center>}>
+      <Suspense fallback={<Center><Spinner height="10vh" width="10vh" /> </Center>}>
         <Component
           isOpen={openModal}
           onOpen={() => setOpenModal(true)}
