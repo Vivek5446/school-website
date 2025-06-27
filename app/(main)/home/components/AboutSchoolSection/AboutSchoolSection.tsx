@@ -66,7 +66,7 @@ export default function AboutSchool() {
                 About Our School
             </CommonHeading>
             <Text fontSize="xl" color={textColor} maxW="3xl" mx="auto" lineHeight="tall">
-              Welcome to Sunshine Primary School, where every child's journey begins with joy, creativity, and endless
+              Welcome to Sunshine Primary School, where every child&apos;s journey begins with joy, creativity, and endless
               possibilities. We believe in nurturing young minds through innovative teaching and a caring environment.
             </Text>
           </VStack>

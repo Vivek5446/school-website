@@ -30,7 +30,7 @@ interface LinkConfig {
 }
 
 interface HeaderProps {
-  scrollToSection: (linkId: string) => void; // Function to scroll to a section
+  scrollToSection: () => void; // Function to scroll to a section
   linksConfig?: LinkConfig[]; // Array of link configuration
   colors: any; // Assuming colors can be any object
   metaData: any; // Assuming metaData can be any object
@@ -92,7 +92,7 @@ const Header: React.FC<HeaderProps> = ({
 
   const handleLinkClick = (linkId: string) => {
     setActiveLink(linkId);
-    scrollToSection(linkId);
+    scrollToSection();
   };
 
   return (

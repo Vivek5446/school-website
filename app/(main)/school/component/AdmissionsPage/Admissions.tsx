@@ -28,7 +28,7 @@ import {
           </Heading>
           <Text fontSize="lg">
             Welcome to the Admissions section! Our school offers a rich academic
-            environment where students can thrive. Below you'll find all the
+            environment where students can thrive. Below you&apos;ll find all the
             information you need to apply, including steps to follow, requirements,
             and important deadlines.
           </Text>

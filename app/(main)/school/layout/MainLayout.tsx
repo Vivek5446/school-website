@@ -1,9 +1,8 @@
+import { Spinner, useColorModeValue, useMediaQuery, useTheme } from "@chakra-ui/react";
+import { observer } from "mobx-react-lite";
 import { Suspense, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import { observer } from "mobx-react-lite";
-import { useColorModeValue, useMediaQuery, useTheme } from "@chakra-ui/react";
 import styled from "styled-components";
-import Loader from "../../../../config/component/Loader/Loader";
 
 const SchoolLayout = observer(() => {
   const theme = useTheme();
@@ -21,7 +20,7 @@ const SchoolLayout = observer(() => {
       }}
     >
       <ContentContainer sizeStatus={sizeStatus}>
-        <Suspense fallback={<Loader height="90vh" />}>
+        <Suspense fallback={<Spinner h="90vh" />}>
           <Outlet />
         </Suspense>
       </ContentContainer>
@@ -29,7 +28,7 @@ const SchoolLayout = observer(() => {
   );
 });
 
-const ContentContainer = styled.div<{ sizeStatus: Boolean }>`
+const ContentContainer = styled.div<{ sizeStatus: boolean }>`
   overflow-x: hidden;
   transition: all 0.3s ease-in-out;
   &.fullscreen {
