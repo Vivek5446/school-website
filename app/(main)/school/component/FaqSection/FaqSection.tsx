@@ -1,8 +1,8 @@
-import Faq1 from "./component/Faq1"
+import React from 'react'
 
-const FaqSection = ({ setContent, content, webColor, isEditable }: any) => {
+const FaqSection = () => {
   return (
-    <Faq1 content={content} setContent={setContent} webColor={webColor} isEditable={isEditable}/>
+    <div>FaqSection</div>
   )
 }
 

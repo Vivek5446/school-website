@@ -1,30 +1,29 @@
-import { useState } from "react";
 import {
   Box,
-  Text,
-  Heading,
+  Button,
   Center,
   Divider,
+  Flex,
   Grid,
   GridItem,
-  useBreakpointValue,
-  useColorModeValue,
-  Flex,
+  Heading,
   Icon,
-  Button,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  ModalFooter,
   Input,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Text,
   Textarea,
-  useColorMode,
+  useBreakpointValue,
+  useColorModeValue
 } from "@chakra-ui/react";
+import { useState } from "react";
 import { FaBookOpen, FaPlus } from "react-icons/fa";
-import { useSectionColorContext } from "../../../School";
+// import { useSectionColorContext } from "../../../School";
 import { motion } from "framer-motion";
 
 const AnimatedBox = motion(Box);
@@ -32,14 +31,14 @@ const AnimatedBox = motion(Box);
 const Curriculum1 = ({
   content,
   setContent,
-  webColor,
+  // webColor,
   isEditable,
   titleColor,
   borderColor,
   textColor,
 }: any) => {
-  const { colorMode } = useColorMode();
-  const { colors } = useSectionColorContext() || { colors: webColor || {} };
+  // const { colorMode } = useColorMode();
+  // const { colors } = useSectionColorContext() || { colors: webColor || {} };
 
   const bg = useColorModeValue("gray.50", "gray.900");
   const sectionBgColor = useColorModeValue("white", "gray.800");
@@ -108,11 +107,11 @@ const Curriculum1 = ({
           textAlign="center"
           mb={3}
           fontWeight="bold"
-          color={
-            colorMode === "light"
-              ? colors?.headingColor?.light
-              : colors?.headingColor?.dark
-          }
+          // color={
+          //   colorMode === "light"
+          //     ? colors?.headingColor?.light
+          //     : colors?.headingColor?.dark
+          // }
         >
           {editedTitle}
         </Heading>
@@ -124,11 +123,11 @@ const Curriculum1 = ({
         mx="auto"
         fontWeight="semibold"
         fontSize={{ base: "md", md: "xl" }}
-        color={
-          colorMode === "light"
-            ? colors?.subHeadingColor?.light
-            : colors?.subHeadingColor?.dark
-        }
+        // color={
+        //   colorMode === "light"
+        //     ? colors?.subHeadingColor?.light
+        //     : colors?.subHeadingColor?.dark
+        // }
       >
         {editedSubtitle}
       </Text>
@@ -149,7 +148,7 @@ const Curriculum1 = ({
                   borderRadius="lg"
                   bg={sectionBgColor}
                   boxShadow="lg"
-                  transition="all 0.3s"
+                  // transition="all 0.3s"
                   _hover={{ transform: "scale(1.05)" }}
                   cursor={isEditable ? "pointer" : "default"}
                   onClick={() => isEditable && openEditSectionModal(index)}

@@ -1,16 +1,16 @@
 import {
   Box,
-  Container,
-  Heading,
-  Text,
-  Flex,
-  Image,
-  VStack,
-  useColorModeValue,
   Button,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  VStack,
   useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
-import { useSectionColorContext } from "../../../../School";
+// import { useSectionColorContext } from "../../../../School";
 import { motion } from "framer-motion";
 
 // Motion components
@@ -44,7 +44,7 @@ export default function About1({
   onOpen,
 }: AboutProps) {
   const { colorMode } = useColorMode();
-  const { colors } = useSectionColorContext() || { colors: webColor || {} };
+  // const { colors } = useSectionColorContext() || { colors: webColor || {} };
   const bg = useColorModeValue("gray.50", "gray.900");
   const textColor = useColorModeValue("gray.700", "gray.300");
 
@@ -68,21 +68,21 @@ export default function About1({
                 textAlign="center"
                 fontWeight="bold"
                 mb={3}
-                color={
-                  colorMode === "light"
-                    ? colors?.headingColor?.light
-                    : colors?.headingColor?.dark
-                }
+                // color={
+                //   colorMode === "light"
+                //     ? colors?.headingColor?.light
+                //     : colors?.headingColor?.dark
+                // }
               >
                 {content?.title}
               </Heading>
               <MotionText
                 fontWeight="semibold"
-                color={
-                  colorMode === "light"
-                    ? colors?.subHeadingColor?.light
-                    : colors?.subHeadingColor?.dark
-                }
+                // color={
+                //   colorMode === "light"
+                //     ? colors?.subHeadingColor?.light
+                //     : colors?.subHeadingColor?.dark
+                // }
                 fontSize={{ base: "lg", md: "xl" }}
                 mb={12}
                 maxW={{ base: "100%", md: "100%" }}
@@ -142,7 +142,7 @@ export default function About1({
                 h={{ base: "100%", md: "380px" }}
                 objectFit="cover"
                 boxShadow="lg"
-                transition="transform 0.3s"
+                // transition="transform 0.3s"
                 _hover={{ transform: "scale(1.05)" }}
               />
             </MotionBox>

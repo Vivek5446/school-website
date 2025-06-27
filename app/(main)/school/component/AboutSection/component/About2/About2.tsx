@@ -14,13 +14,13 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useSectionColorContext } from "../../../../School";
+// import { useSectionColorContext } from "../../../../School";
 
 const MotionBox = motion(Box);
 
 const About2 = ({ content, webColor, isEditable, onOpen }: any) => {
   const { colorMode } = useColorMode();
-  const { colors } = useSectionColorContext() || { colors: webColor || {} };
+  // const { colors } = useSectionColorContext() || { colors: webColor || {} };
   const bg = useColorModeValue("gray.50", "gray.900");
   const descriptionColor = useColorModeValue("gray.700", "gray.300");
 
@@ -82,11 +82,11 @@ const About2 = ({ content, webColor, isEditable, onOpen }: any) => {
             <Heading
               as="h2"
               size="xl"
-              color={
-                colorMode === "light"
-                  ? colors?.headingColor?.light
-                  : colors?.headingColor?.dark
-              }
+              // color={
+              //   colorMode === "light"
+              //     ? colors?.headingColor?.light
+              //     : colors?.headingColor?.dark
+              // }
               fontWeight="bold"
             >
               {content.title}
@@ -94,11 +94,11 @@ const About2 = ({ content, webColor, isEditable, onOpen }: any) => {
             <Text
               fontSize="xl"
               fontWeight="semibold"
-              color={
-                colorMode === "light"
-                  ? colors?.subHeadingColor?.light
-                  : colors?.subHeadingColor?.dark
-              }
+              // color={
+              //   colorMode === "light"
+              //     ? colors?.subHeadingColor?.light
+              //     : colors?.subHeadingColor?.dark
+              // }
             >
               {content.subtitle}
             </Text>

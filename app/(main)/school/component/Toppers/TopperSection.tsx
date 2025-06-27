@@ -1,11 +1,9 @@
-import { observer } from "mobx-react-lite";
-import Topper1 from "./component/Toppers1";
-import { useSectionColorContext } from "../../School";
+import React from 'react'
 
-const TopperSection = observer(({ webColor }: any) => {
-  const { colors } = useSectionColorContext() || { colors: webColor || {} };
+const TopperSection = () => {
+  return (
+    <div>TopperSection</div>
+  )
+}
 
-  return <Topper1 webColor={colors} />;
-});
-
-export default TopperSection;
+export default TopperSection

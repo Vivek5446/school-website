@@ -6,8 +6,9 @@ import {
   Input,
   ModalFooter,
 } from "@chakra-ui/react";
-import FormModel from "../../../../../../config/component/common/FormModel/FormModel";
+// import FormModel from "../../../../../../config/component/common/FormModel/FormModel";
 import { useState } from "react";
+import FormModel from "../../../../../component/common/FormModel/FormModel";
 
 const MapForm = ({ content, open, onClose, setContent }: any) => {
   const [data, setData] = useState(content);

@@ -14,7 +14,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import FormModel from "../../../../../../../config/component/common/FormModel/FormModel";
+import FormModel from "../../../../../../component/common/FormModel/FormModel";
 
 const AboutForm = ({ isOpen, onClose, content, setContent }: any) => {
   const [editContent, setEditContent] = useState({ ...content });

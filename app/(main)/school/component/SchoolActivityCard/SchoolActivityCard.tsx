@@ -1,7 +1,7 @@
 // CampCard.tsx  
-import React from 'react';  
-import { Box, Flex, Icon, Text } from '@chakra-ui/react';  
-import { FaPencilAlt } from 'react-icons/fa';  
+import { Box, Flex, Icon, Text } from '@chakra-ui/react';
+import React from 'react';
+import { FaPencilAlt } from 'react-icons/fa';
 
 interface CampCardProps {  
   title: string;  
