@@ -16,13 +16,13 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import CustomSmallTitle from "../../../../component/common/CustomSmallTitle/CustomSmallTitle";
-import BlogsCard from "./BlogsCard";
-import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
-import stores from "../../../../store/stores";
-import { getStatusType } from "../../../../config/utils/function";
+import { useCallback, useEffect, useState } from "react";
+import CustomSmallTitle from "../../../../component/common/CustomSmallTitle/CustomSmallTitle";
 import useDebounce from "../../../../component/config/component/customHooks/useDebounce";
+import { getStatusType } from "../../../../config/utils/function";
+import stores from "../../../../store/stores";
+import BlogsCard from "./BlogsCard";
 
 const BlogCardSection = observer(() => {
   const {

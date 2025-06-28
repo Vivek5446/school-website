@@ -1,19 +1,15 @@
 "use client"
 
 import {
-    Badge,
-    Box,
-    Container,
-    Heading,
-    Icon,
-    SimpleGrid,
-    Text,
-    useColorModeValue,
-    VStack
+  Box,
+  Container,
+  SimpleGrid,
+  Text,
+  useColorModeValue,
+  VStack
 } from "@chakra-ui/react"
-import { FaMapMarkerAlt } from "react-icons/fa"
-import ContactCardSection from "./ContactCardSection"
 import CommonHeading from "../../../../component/common/CommonHeading/CommonHeading"
+import ContactCardSection from "./ContactCardSection"
 
 export default function MapAddressSection() {
   const bgGradient = useColorModeValue(
@@ -23,7 +19,6 @@ export default function MapAddressSection() {
 
   const cardBg = useColorModeValue("white", "gray.800")
   const textColor = useColorModeValue("gray.700", "gray.200")
-  const headingColor = useColorModeValue("purple.600", "purple.300")
 
   return (
     <Box bgGradient={bgGradient} py={16} position="relative" overflow="hidden">
@@ -74,7 +69,7 @@ export default function MapAddressSection() {
               Visit Our Happy Place! 🏫
             </Heading> */}
             <Text fontSize="lg" color={textColor} maxW="2xl" textAlign="center">
-              Come and see where the magic of learning happens every day. We'd love to welcome you to our colorful
+              Come and see where the magic of learning happens every day. We&apos;d love to welcome you to our colorful
               world!
             </Text>
           </VStack>

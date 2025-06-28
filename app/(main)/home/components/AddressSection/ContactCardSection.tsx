@@ -9,12 +9,12 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import {
-  FaMapMarkerAlt,
-  FaPhone,
-  FaEnvelope,
-  FaClock,
   FaBus,
+  FaClock,
+  FaEnvelope,
+  FaMapMarkerAlt,
   FaParking,
+  FaPhone,
 } from "react-icons/fa";
 
 const contactItems = [
@@ -50,8 +50,8 @@ const contactItems = [
   },
   {
     icon: FaClock,
-    bg: "purple.100",
-    color: "purple.600",
+    bg: "orange.100",
+    color: "orange.600",
     title: "School Hours",
     content: (
       <>
@@ -83,7 +83,7 @@ const infoCards = [
 const ContactCardSection = ({ cardBg = "white", headingColor = "gray.800", textColor = "gray.600" }) => {
   return (
     <VStack spacing={4} align="stretch">
-      <Box bg={cardBg} p={8} borderRadius="3xl" boxShadow="lg" border="2px solid" borderColor="blue.100">
+      <Box bg={cardBg} py={6} px={8} borderRadius="3xl" boxShadow="lg" border="2px solid" borderColor="blue.100">
         <VStack spacing={4} align="stretch">
           <Heading size="lg" color={headingColor} textAlign="center">
             Get In Touch! 💌

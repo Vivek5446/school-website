@@ -26,7 +26,7 @@ const SchoolAdmissionSection = () => {
               🎓 Join Our School Family
             </Heading>
             <Text fontSize="lg" color="gray.600">
-              Start your child's amazing educational journey with us!
+              Start your child&apos;s amazing educational journey with us!
             </Text>
           </VStack>
 

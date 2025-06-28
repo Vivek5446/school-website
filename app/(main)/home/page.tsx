@@ -8,6 +8,7 @@ import SchoolAdmissionSection from "./components/AdmissionSection/AdmissionSecti
 import MeetOurPrincipal from "./components/PrincipalSection/PrincipalSection";
 import SchoolHeroSection from "./components/SchoolHeroSection/SchoolHeroSection";
 import MeetOurTeachers from "./components/TeachersSection/TeachersSection";
+import SchoolEventsSection from "./components/SchoolEvents/SchoolEvents";
 
 
 const images = [
@@ -37,6 +38,7 @@ const Home = observer(() => {
       <AboutSchool/>
       <MeetOurPrincipal />
       <MeetOurTeachers />
+      <SchoolEventsSection/>
       <GallerySection images={images}   />
       <SchoolAdmissionSection/>
       <MapAddressSection/>
