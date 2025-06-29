@@ -4,7 +4,6 @@ import {
   Box,
   Container,
   Flex,
-  Heading,
   IconButton,
   Image,
   Modal,
@@ -23,13 +22,18 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import CommonHeading from "../../../../component/common/CommonHeading/CommonHeading";
 
 const fadeIn = keyframes`
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 `;
 
-export default function GallerySection({ images }: { images: { src: string; caption?: string }[] }) {
+export default function GallerySection({
+  images,
+}: {
+  images: { src: string; caption?: string }[];
+}) {
   const bg = useColorModeValue("gray.50", "gray.900");
   const cardBg = useColorModeValue("white", "gray.800");
   const { colorMode } = useColorMode();
@@ -109,7 +113,6 @@ export default function GallerySection({ images }: { images: { src: string; capt
         closeModal();
       }
     };
-    
 
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
@@ -124,17 +127,7 @@ export default function GallerySection({ images }: { images: { src: string; capt
     <Box id="gallery" py={10} bg={bg} px={{ base: 2, md: 4 }}>
       <Container maxW="80%">
         <Stack spacing={1} textAlign="center" mb={6}>
-          <Heading
-            as="h2"
-            size="xl"
-            fontWeight="extrabold"
-            bgGradient={colorMode === "light" 
-              ? "linear(to-r, blue.400, purple.600)"
-              : "linear(to-r, purple.200, pink.300)"}
-            bgClip="text"
-          >
-            Our School Moments
-          </Heading>
+          <CommonHeading mb={2}>Our School Moments</CommonHeading>
           <Text fontSize="lg" color={"gray.500"} fontWeight={500}>
             Scroll through our gallery to relive the memories
           </Text>
@@ -143,9 +136,9 @@ export default function GallerySection({ images }: { images: { src: string; capt
         <Box position="relative">
           <Slider ref={sliderRef} {...settings}>
             {images.map((image, index) => (
-              <Box 
-                key={index} 
-                p={2} 
+              <Box
+                key={index}
+                p={2}
                 onMouseEnter={() => setIsHovered(index)}
                 onMouseLeave={() => setIsHovered(-1)}
               >
@@ -158,7 +151,7 @@ export default function GallerySection({ images }: { images: { src: string; capt
                   transform={isHovered === index ? "scale(1.03)" : "scale(1)"}
                   _hover={{
                     shadow: "lg",
-                    cursor: "pointer"
+                    cursor: "pointer",
                   }}
                   bg={cardBg}
                 >
@@ -222,23 +215,23 @@ export default function GallerySection({ images }: { images: { src: string; capt
             zIndex={1}
             rounded="full"
             variant="solid"
-            />
+          />
         </Box>
 
         <Modal isOpen={isOpen} onClose={closeModal} size="4xl" isCentered>
           <ModalOverlay bg="blackAlpha.800" />
-          <ModalContent 
+          <ModalContent
             bg="transparent"
             boxShadow="none"
             maxH="90vh"
             animation={`${fadeIn} 0.3s ease-out`}
           >
             <Flex position="relative" height="100%" align="center">
-              <ModalCloseButton 
-                position="absolute" 
-                right={2} 
-                top={2} 
-                color="white" 
+              <ModalCloseButton
+                position="absolute"
+                right={2}
+                top={2}
+                color="white"
                 bg="blackAlpha.600"
                 _hover={{ bg: "blackAlpha.700" }}
                 zIndex={2}

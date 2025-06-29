@@ -16,7 +16,6 @@ import {
 import { observer } from "mobx-react-lite";
 import { useRouter } from "next/navigation";
 import WhatsAppButton from "../../../../component/common/whatsApp/whatsAppButton";
-import HeroNavButton from "./component/HeroNavButton";
 import NavItemsLayout from "./component/NavItemsLayout";
 
 const Header = observer(() => {
@@ -115,13 +114,13 @@ const Header = observer(() => {
           onClick={() => router.push("/")}
         />
 
-        <Flex flex={1} justify="center" pr={2}>
+        <Flex flex={1} justify="center" pr={6}>
           <NavItemsLayout />
         </Flex>
 
         <Flex align="center" gap={3}>
           <WhatsAppButton />
-          <HeroNavButton />
+          {/* <HeroNavButton /> */}
         </Flex>
       </Flex>
     </Box>

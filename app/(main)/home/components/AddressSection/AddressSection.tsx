@@ -21,7 +21,8 @@ export default function MapAddressSection() {
   const textColor = useColorModeValue("gray.700", "gray.200")
 
   return (
-    <Box bgGradient={bgGradient} py={16} position="relative" overflow="hidden">
+    <Box bgGradient={bgGradient} py={16} position="relative" overflow="hidden"
+    >
       {/* Decorative Elements */}
       <Box
         position="absolute"

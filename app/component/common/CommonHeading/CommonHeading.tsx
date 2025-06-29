@@ -5,7 +5,7 @@ const CommonHeading = ({ children, headingProps, dividerProps, containerProps ,m
   
   return (
     <Box textAlign="center" mb={mb} {...containerProps}>
-      <Heading as="h2" size="2xl" fontWeight="bold" color="gray.800" mb={4} {...headingProps}
+      <Heading as="h2" size="2xl" fontWeight="bold" color="gray.800" mb={2} {...headingProps}
         bgGradient={colorMode === "light" 
               ? "linear(to-r, blue.400, purple.400,purple.600)"
               : "linear(to-r, purple.200, pink.300)"}

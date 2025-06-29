@@ -30,3 +30,22 @@ export const stats = [
   { value: "25+", label: "Years Experience" },
   { value: "12:1", label: "Student-Teacher Ratio" },
 ]
+
+export const galleryImages  = [
+  { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
+  { src: "https://img.freepik.com/free-photo/many-hands-volunteers-maths-class_329181-14217.jpg?t=st=1750953538~exp=1750957138~hmac=2864e261f65fe232d88d7c8cd95272107875b19cc961bdb302b7170708018968&w=1380" },
+  { src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" },
+  { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
+  { src: "https://img.freepik.com/free-photo/many-hands-volunteers-maths-class_329181-14217.jpg?t=st=1750953538~exp=1750957138~hmac=2864e261f65fe232d88d7c8cd95272107875b19cc961bdb302b7170708018968&w=1380" },
+  { src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" },
+  { src: "https://img.freepik.com/free-photo/many-hands-volunteers-maths-class_329181-14217.jpg?t=st=1750953538~exp=1750957138~hmac=2864e261f65fe232d88d7c8cd95272107875b19cc961bdb302b7170708018968&w=1380" },
+  { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
+  { src: "https://img.freepik.com/free-photo/many-hands-volunteers-maths-class_329181-14217.jpg?t=st=1750953538~exp=1750957138~hmac=2864e261f65fe232d88d7c8cd95272107875b19cc961bdb302b7170708018968&w=1380" },
+  { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
+  { src: "https://img.freepik.com/free-photo/many-hands-volunteers-maths-class_329181-14217.jpg?t=st=1750953538~exp=1750957138~hmac=2864e261f65fe232d88d7c8cd95272107875b19cc961bdb302b7170708018968&w=1380" },
+  { src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" },
+  { src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" },
+  { src: "https://img.freepik.com/free-photo/many-hands-volunteers-maths-class_329181-14217.jpg?t=st=1750953538~exp=1750957138~hmac=2864e261f65fe232d88d7c8cd95272107875b19cc961bdb302b7170708018968&w=1380" },
+  { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
+  { src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" },
+];
